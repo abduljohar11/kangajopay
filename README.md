@@ -40,9 +40,8 @@ Ikuti langkah-langkah berikut untuk mengatur dan menjalankan proyek di lingkunga
 ### 1. Klon Repositori
 
 ```bash
-git clone [https://github.com/abduljohar11/kangajopay.git](https://github.com/abduljohar11/kangajopay.git)
+git clone https://github.com/abduljohar11/kangajopay.git
 cd kangajopay
-
 ```
 
 ### 2. Salin File Konfigurasi Lingkungan (`.env`)
@@ -51,7 +50,6 @@ Salin file `.env.example` menjadi `.env`:
 
 ```bash
 cp .env.example .env
-
 ```
 
 _(Sesuaikan konfigurasi database atau port pada file `.env` jika diperlukan)._
@@ -62,7 +60,6 @@ Nyalakan seluruh container di _background_ menggunakan Laravel Sail:
 
 ```bash
 ./vendor/bin/sail up -d
-
 ```
 
 ### 4. Instal Dependensi PHP & Frontend (Node.js)
@@ -75,7 +72,6 @@ Jalankan instalasi paket melalui container Sail agar tidak memerlukan Composer/N
 
 # Instal dependensi Frontend
 ./vendor/bin/sail npm install
-
 ```
 
 ### 5. Generate Application Key & Migrasi Database
@@ -85,7 +81,6 @@ Buat _App Key_ dan jalankan migrasi tabel database MariaDB:
 ```bash
 ./vendor/bin/sail artisan key:generate
 ./vendor/bin/sail artisan migrate
-
 ```
 
 ### 6. Jalankan Vite Development Server
@@ -94,7 +89,6 @@ Untuk mengaktifkan _Hot Module Replacement_ (HMR) pada frontend Vue & Tailwind:
 
 ```bash
 ./vendor/bin/sail npm run dev
-
 ```
 
 ---
@@ -130,4 +124,11 @@ Kontribusi, _issues_, dan _pull requests_ sangat dipersilakan! Silakan buat _iss
 
 ## 📄 Lisensi
 
-Proyek ini dilisensikan di bawah **GNU Affero General Public License v3.0 (AGPL-3.0)** — lihat file [LICENSE](https://www.google.com/search?q=LICENSE) untuk detail selengkapnya.
+Proyek ini dilisensikan di bawah **GNU Affero General Public License v3.0 (AGPL-3.0)** — lihat file [`LICENSE`](LICENSE) di repositori ini untuk teks hukum lengkapnya.
+
+### Ringkasan Lisensi AGPL-3.0:
+
+1. **Bebas Digunakan & Dimodifikasi:** Anda bebas menyalin, memodifikasi, dan mendistribusikan perangkat lunak ini secara gratis maupun berbayar.
+2. **Kewajiban Membagikan Kode Sumber (Aturan Server/SaaS):** Jika Anda memodifikasi program ini dan menyediakannya sebagai layanan berbasis jaringan/server (SaaS) yang diakses publik, **Anda wajib menyediakan akses bagi pengguna untuk mengunduh kode sumber (_source code_) dari versi yang telah Anda modifikasi tersebut secara gratis.**
+3. **Pemberitahuan Hak Cipta:** Setiap salinan atau modifikasi harus tetap menyertakan catatan hak cipta asli dan lisensi AGPL ini.
+4. **Tanpa Garansi:** Perangkat lunak ini disediakan "apa adanya" tanpa jaminan apa pun. Pembuat tidak bertanggung jawab atas kerusakan atau kerugian yang timbul dari penggunaannya.
