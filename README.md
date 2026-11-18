@@ -40,7 +40,7 @@ Ikuti langkah-langkah berikut untuk mengatur dan menjalankan proyek di lingkunga
 ### 1. Klon Repositori
 
 ```bash
-git clone [https://github.com/USERNAME/kangajopay.git](https://github.com/USERNAME/kangajopay.git)
+git clone [https://github.com/abduljohar11/kangajopay.git](https://github.com/abduljohar11/kangajopay.git)
 cd kangajopay
 
 ```
@@ -131,10 +131,3 @@ Kontribusi, _issues_, dan _pull requests_ sangat dipersilakan! Silakan buat _iss
 ## 📄 Lisensi
 
 Proyek ini dilisensikan di bawah **GNU Affero General Public License v3.0 (AGPL-3.0)** — lihat file [LICENSE](https://www.google.com/search?q=LICENSE) untuk detail selengkapnya.
-
-> Copyright (C) 2007 Free Software Foundation, Inc. <[https://fsf.org/](https://fsf.org/)>
-> Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-
-```
-
-```
